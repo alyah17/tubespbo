@@ -153,7 +153,7 @@ import java.util.Scanner;
                     else if (grid[x][y] == " ") {
                         System.out.println("Computer missed");
                         grid[x][y] = "*";
-                        //Saving missed guesses for computer
+                        //Saving missed guesses for computer a
                         if(missedGuesses[x][y] != 1)
                             missedGuesses[x][y] = 1;
                     }
