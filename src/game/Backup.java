@@ -11,12 +11,15 @@ import java.util.Scanner;
         public static void main(String[] args){
             System.out.println("** Welcome to Battle Ships game **");
             System.out.println("Right now, sea is empty\n");
+            //menampilkan map game
             createOceanMap();
+            //menginput koordinat player
             saveKoordinat();
+            //input koordinat kapal boot (komputer)
             deployComputerShips();
             do {
                 Battle();
-            }while(BattleShips.playerShips != 0 && BattleShips.computerShips != 0);
+            }while(BattleShips.playerShips != 0 && BattleShips.computerShips != 0); 
             gameOver();
         }
        
@@ -25,7 +28,7 @@ import java.util.Scanner;
             for(int i = 0; i < numCols; i++)
                 System.out.print(i);
             System.out.println();
-            for(int i = 0; i < grid.length; i++) {
+            for(int i = 0; i < grid.length; i++) { 
                 for (int j = 0; j < grid[i].length; j++) {
                     grid[i][j] = " ";
                     if (j == 0)
