@@ -1,7 +1,7 @@
 package game;
 
 public class BattleShip {
-
+//class utama
 	public static void main(String[] args) {
 		Game.createOceanMap();
 		Player player = new Player("@",true);
